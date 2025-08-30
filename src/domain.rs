@@ -12,9 +12,6 @@ impl Prompt {
         Ok(Self {raw} )
     }
 
-    pub fn value(&self) -> &str {
-        &self.raw
-    }
 
     pub fn to_payload(&self) -> String {
         format!("Answer this like Jarvis from Iron Man: {}", self.raw)
